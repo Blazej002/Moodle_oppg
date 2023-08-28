@@ -1,0 +1,36 @@
+body {
+    margin: 50px;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.border {
+    border: solid black 1px;
+}
+
+#app {
+    height: auto;
+    font-size: xx-large;
+    border: dashed;
+    background-color: antiquewhite;
+}
+
+.box_2 {
+    margin-left: 10px;
+}
+
+.words{
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center; 
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: x-large;
+    
+}
