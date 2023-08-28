@@ -1,0 +1,57 @@
+body {
+    padding: 20px;
+    background: url("/img/grass03.png");
+    background-size: 400px;
+}
+
+.gridbox {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 150px);
+}
+
+/* HEADER--------------------------------------------------------------HEADER */
+.header {
+    color: rgb(0, 0, 0);
+    font-size: 300%;
+    text-align: center;
+    font-family: fantasy, papyrus, ;
+}
+
+/* INSIDE AND BOXES--------------------------------------------INSIDE AND BOXES */
+#insideInv {
+    background-color: rgb(210, 187, 110);
+    border: 2px solid green;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 150px);
+}
+
+.inv_boxer {
+    border: solid 1px black;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+}
+
+#insideLoot {
+    background-color: rgb(210, 187, 110);
+    border: solid 5px rgba(0, 0, 0, 0.114);
+}
+
+/* IMAGES------------------------------------------------------------IMAGES */
+img {
+    width: 100px;
+}
+#music {
+    padding-top: 480px;
+}
+
+.remove_b {
+    padding-top: 10px;
+    width: 60px;
+    height: 40px;
+
+}

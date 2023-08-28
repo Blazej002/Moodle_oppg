@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!-- Buttons -->
+    <button onclick="open_inv()">Open</button>
+    <button onclick="remove_all()">drop all loot</button>
+
+
+    <!-- Invetory -->
+    <div class="gridbox">
+        <div>
+            <h1 class="header inv">Inventory</h1>
+
+            <div id="insideInv">
+                <div id="box1" class="inv_boxer" onclick="add_pics('box1', 'loot1', 'bread')"></div>
+                <button class="remove_b" onclick="remove_pic('loot1', 'box1', 'bread')">Remove</button>
+                <div id="box2" class="inv_boxer" onclick="add_pics('box2', 'loot2', 'bread')"></div>
+                <button class="remove_b" onclick="remove_pic('loot2', 'box2', 'bread')">Remove</button>
+                <div id="box3" class="inv_boxer" onclick="add_pics('box3', 'loot3', 'bread')"></div>
+                <button class="remove_b" onclick="remove_pic('loot3', 'box3', 'bread')">Remove</button>
+                <div id="box4" class="inv_boxer" onclick="add_pics('box4', 'loot4', 'bread')"></div>
+                <button class="remove_b" onclick="remove_pic('loot4', 'box4', 'bread')">Remove</button>
+                <div id="box5" class="inv_boxer" onclick="add_pics('box5', 'loot5', 'bread')"></div>
+                <button class="remove_b" onclick="remove_pic('loot5', 'box5', 'bread')">Remove</button>
+                <div id="box6" class="inv_boxer" onclick="add_pics('box6', 'loot6', 'bread')"></div>
+                <button class="remove_b" onclick="remove_pic('loot6', 'box6', 'bread')">Remove</button>
+            </div>
+            <h1 class="header" id="scoreboard" style="border: solid 1px black;">SCOREBOARD: </h1>
+        </div>
+
+        <!-- Loot -->
+        <div>
+            <h1 class="header loot">Loot</h1>
+            <div id="insideLoot">
+                <div id="loot1" onclick="add_pics1('loot1', 'box1', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot2" onclick="add_pics1('loot2', 'box2', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot3" onclick="add_pics1('loot3', 'box3', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot4" onclick="add_pics1('loot4', 'box4', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot5" onclick="add_pics1('loot5', 'box5', 'bread')"><img src="/img/bread.jpg"></div>
+                <div id="loot6" onclick="add_pics1('loot6', 'box6', 'bread')"><img src="/img/bread.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <img src="/img/grass03.png"> -->
+    <div id="music">
+    <audio controls hidden loop>
+        <source src="/music/8bitmusic.mp3" type="audio/ogg">
+    </audio>
+</div>
+
+</body>
+
+</html>

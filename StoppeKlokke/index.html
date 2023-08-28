@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoppe klokke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="margin-left: 150px;">Stoppeklokke</h1>
+    <div class="circle">
+        <div class="inside_circle">
+            <div class="time" id="lave">0</div>
+            <div class="controls" id="dave">
+                <!-- <div class="start_button round" onclick="start_time()">Start</div> -->
+                <button class="start_button round" onclick="start_time()">Start</button>
+                <button class="stop_button round" onclick="stop_time()" disabled>Set</button>
+                <button class="clear_button round" onclick="clear_time()">Clear</button>
+            </div>
+            <div class="saved_box" id="ave">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const clock = document.getElementById('lave');
+        const saved = document.getElementById('ave');
+        const Controls = document.getElementById('dave');
+        let seconds = 0;
+        let toggle = false;
+
+        function start_time() {
+            toggle_cotrols()
+            setInterval(count_seconds, 1000);
+        }
+
+        function stop_time() {
+            toggle_cotrols()
+            saved.innerHTML += `<li>${seconds-1} Sekunder.</li>`;
+            seconds = 0;
+            
+        }
+        function clear_time() {
+            location.reload()
+        }
+
+        
+        function count_seconds(){
+            clock.innerHTML = seconds;
+            seconds++}
+        
+        function toggle_cotrols() {
+            if (toggle == true) {
+                Controls.innerHTML = /*HTML*/`
+                <button class="start_button round" onclick="start_time()">Start</button>
+                <button class="stop_button round" onclick="stop_time()" disabled>Set</button>
+                <button class="clear_button round" onclick="clear_time()">Clear</button>
+            ` 
+            toggle = false
+            } else {
+                Controls.innerHTML = /*HTML*/`
+                <button class="start_button round" onclick="start_time()" disabled>Start</button>
+                <button class="stop_button round" onclick="stop_time()" >Set</button>
+                <button class="clear_button round" onclick="clear_time()">Clear</button>
+            `
+            
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

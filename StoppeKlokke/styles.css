@@ -1,0 +1,64 @@
+
+.circle {
+    background-color: gray;
+    border: solid;
+    border-radius: 50%;
+    height: 450px;
+    width: 500px;
+
+
+}
+
+.inside_circle {
+    padding-top: 10px;
+}
+
+.time {
+    background-color: white;
+    border: black solid;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    font-size: 450%;
+    margin-left: 99px;
+    margin-top: 60px;
+}
+
+.controls {
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+}
+
+.start_button {
+    background-color: blue;
+}
+
+.stop_button {
+    background-color: red;
+
+}
+
+.clear_button {
+    background-color: lightgray;
+}
+
+.round {
+    font-size: 200%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 100px;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+
+.saved_box {
+    border: solid;
+    width: 300px;
+    height: 130px;
+    margin-left: 99px;
+    margin-top: 10px;
+    background-color: white;
+    font-size: 170%;
+}

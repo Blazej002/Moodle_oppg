@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(46, 192, 237);
+        }
+
+        .cont {
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+            padding-top: 5px;
+            background-color: lightblue;
+        }
+
+        .buttons {
+
+            padding-left: 12px;
+            background-color: antiquewhite;
+            border: solid;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .color {
+            width: 40px;
+            margin-left: 1px;
+        }
+
+        .display {
+            color: black;
+            background-color: white;
+            width: 600px;
+            height: 100px;
+        }
+
+        .spacebar {
+            background-color: antiquewhite;
+            width: 200px;
+            height: 40px;
+            margin-top: 6px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display" class="display"></div>
+
+
+    <div class="cont">
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">q</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">w</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">e</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">r</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">t</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">y</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">u</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">i</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">o</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">p</div>
+    </div>
+    <div class="cont">
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">a</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">s</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">d</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">f</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">g</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">h</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">j</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">k</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">l</div>
+    </div>
+    <div class="cont">
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">z</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">x</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">c</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">v</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">b</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">n</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">m</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">,</div>
+        <div class="buttons color" onclick="do_sumn(this.innerHTML)">.</div>
+    </div>
+    <!-- doesnt work -->
+    <div class="spacebar buttons" onclick="do_sumn(' ')">
+        Space
+    </div>
+    <script>
+
+        const app = document.getElementById('display');
+
+
+        function do_sumn(that) {
+            app.innerHTML += /*HTML*/`
+            ${that}
+            `
+            console.log(that)
+        }
+    </script>
+</body>
+
+</html>
