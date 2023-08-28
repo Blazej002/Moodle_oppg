@@ -1,0 +1,17 @@
+body {
+    margin: 50px;
+}
+.submit_button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.border {
+    border: solid 1px black;
+}
+.margin {
+    margin: 10px;
+}
+.output_box {
+    height:auto;
+    width: auto;
+}
