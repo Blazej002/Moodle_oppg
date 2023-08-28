@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farger</title>
+    <style>
+        #inside_box {
+            width: 300px;
+            height: 200px;
+            border: solid 1px black;
+            text-align: center;
+     
+        }
+    </style>
+</head>
+<body>
+    <h1>Color change</h1>
+    <button onclick="color_change(200, 'gray', 'Hello world')">Option 1 </button>
+    <button onclick="color_change('large', 'red', 'Sup bitches')">Option 2</button>
+    <div id="inside_box">
+        
+    </div>
+
+    <script>
+            function color_change(font, color, text){
+                document.getElementById('inside_box').innerHTML = /*HTML*/`
+                <div style="background-color: ${color};
+                font-size: ${font}%; width: 200px; height: 300px;">${text}</div>
+            `        
+            }
+
+    </script>
+</body>
+</html>

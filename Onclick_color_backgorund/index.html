@@ -1,0 +1,115 @@
+<!-- 
+Bytting av bakgrunnsfarge på nettleser eller valgt div v/klikk.
+Lag 3 eller flere div'er som representerer hver sin farge.
+
+Disse skal brukes til å velge hvilken farge man setter på nettleserbakgrunenn eller div'en man velger.
+Lag en knapp som endrer hele bakgrunnsfargen i nettleseren til den fargen du har valgt.
+
+Lag deretter 2 eller flere tomme (men synlige) div'er.
+Disse er de som skal klikkes på for å velges og da få den bakgrunnsfargen man har valgt fra fargedivene.
+Gjør det også synlig hvilken av disse div'ene som er valgt - ved f.eks å sette på en ramme.
+Dette er en oppgave hvor du trenger å bruke variabler til å spare på valgene du har tatt, og koble disse sammen.
+
+Ting som kan være lurt å sjekke ut:
+.classList.remove()
+.classList.toggle() (eller .classList.add())
+
+man kan skrive: ' divVariabel.style.detManVilStyle = "ny propertyverdi man vil ha" ' for å endre css i javascript
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .balls {
+            display: flex;
+            flex-direction: row;
+        }
+        .circle {
+            height: 100px;
+            width:  100px;
+            border-radius: 50%;
+            padding: 20px;
+            margin-top:20px ;
+            margin-left:20px ;
+            text-align: center;
+            
+        }
+        .blue {
+            background-color: lightblue;
+        }
+        .red {
+            background-color: red;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .gray {
+            background-color: gray;
+        }
+
+        .darkblue {
+            background-color: darkblue;
+        }
+        .cont {
+            border: solid 1px black;
+        }
+
+        .button {
+            height: 60px;
+            width: 90px;
+            margin-top: 10px;
+            margin-left: 370px ;
+        }
+    </style>
+</head>
+
+<body style="background-color: gray;">
+    <div class="balls">
+        <div class="circle blue" onclick="color_check('lightblue')"></div>
+        <div class="circle red" onclick="color_check('red')"></div>
+        <div class="circle orange" onclick="color_check('orange')"></div>
+        <div class="circle gray" onclick="color_check('gray')"></div>
+        <div class="circle darkblue" onclick="color_check('darkblue')"></div>
+        <div id="current" class="circle cont">Selected</div>
+        <div id="prev" class="circle cont" onclick="color_check(prev_color)"> Previous</div>
+    </div>
+    <button class="button" onclick="do_the_ting()">Background-color Change</button>
+    
+    <script>
+        let current_color;
+        let prev_color;
+        current_color = '';
+        prev_color = '';
+        function color_check(color) {
+            prev_color = current_color;
+            current_color = color;
+            perv()
+            current()
+            console.log('Previous color is ' + prev_color)
+            console.log('Current color is ' + current_color)
+        }
+
+        function perv() {
+            document.getElementById('prev').style.background = prev_color
+
+        }
+        function current() {
+            document.getElementById('current').style.background = current_color
+
+        }
+
+        function do_the_ting() {
+            document.body.style.background = current_color;
+        }
+
+
+    </script>
+</body>
+
+</html>

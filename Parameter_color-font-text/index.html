@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farger</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Color change</h1>
+    <button onclick="color_change(200,300, 100)">Option 1 </button>
+    <button onclick="color_change(100,200, 20)">Option 2</button>
+    <div id="inside_box">
+    </div>
+
+    <script>
+        var color_x;
+        
+        function color_change(height, width, font) {
+            document.getElementById('inside_box').innerHTML = /*HTML*/`
+                <div style="background-color: ${color_x};
+                 width: ${width}px; height: ${height}px;
+                font-size: ${font}%;">Hello World!</div>
+            `        }
+
+            function color_chan(font, color, text){
+
+            }
+
+    </script>
+</body>
+</html>
