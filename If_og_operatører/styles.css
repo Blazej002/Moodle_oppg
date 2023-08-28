@@ -1,0 +1,39 @@
+.light {
+    width: 200px;
+    height: 220px;
+    border: solid black 2px;
+    border-radius: 60%;
+    margin-left: 200px;
+    /* background-color: antiquewhite; */
+}
+.off {
+    background-color: gray;
+}
+.on {
+    background-color: yellow;
+}
+
+
+.legs {
+    border-radius: 20%;
+    margin-top: -11px;
+    margin-left: 260px;
+    border: solid black 2px;
+    height: 35px;
+    width: 80px;
+    background-color: silver;
+}
+.cont_buttons {
+    margin-top: 25px;
+    margin-left: 275px;
+}
+.buttons {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border: solid 1px lightblue;
+}
+.active {
+    background-color: aliceblue;
+    border: solid 3px darkblue;
+}
