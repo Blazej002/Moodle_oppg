@@ -1,11 +1,11 @@
 // Model
 const app = document.getElementById('app');
+const print = console.log;
 
 const txt = "Hei på deg";
 let reverse_txt = '';
 
 const len_txt = txt.length;
-const print = console.log;
 
 // View
 updateHtml()
