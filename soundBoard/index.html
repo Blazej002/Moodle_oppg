@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:80px 80px auto ;
+
+        }
+        .box {
+            width: 60px;
+            height: 40px;
+            padding-top: 20px;
+            background-color: rgb(148, 139, 139);
+            border: dashed;
+            margin-top: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" onclick="play_audio('bubbles')">
+            
+            Bubbles
+            <audio id="bubbles"src="./audio/Soundboard_sounds_bubbles.mp3"></audio>
+        </div>
+        
+        <div class="box" onclick="play_audio('ufo')">
+        UFO
+        <audio src="./audio/Soundboard_sounds_ufo.mp3" id="ufo"></audio>        
+        </div>
+
+        <div class="box" onclick="play_audio('confetti')">
+        Confetti
+        <audio src="./audio/Soundboard_sounds_confetti.mp3" id="confetti"></audio>        
+        </div>
+
+        <div class="box" onclick="play_audio('glimmer')">
+        Glimmer
+        <audio src="./audio/Soundboard_sounds_glimmer.mp3" id="glimmer"></audio>        
+        </div>
+
+        <div class="box" onclick="play_audio('moon')">
+        Moon
+        <audio src="./audio/Soundboard_sounds_moon.mp3" id="moon"></audio>        
+        </div>
+        <div class="box" onclick="play_audio('clay')">
+        Clay
+        <audio src="./audio/Soundboard_sounds_clay.mp3" id="clay"></audio>        
+        </div>
+    </div>
+        
+
+    <script> 
+        function play_audio(selected) {
+            document.getElementById(selected).play()
+        }
+    </script>
+</body>
+
+</html>
