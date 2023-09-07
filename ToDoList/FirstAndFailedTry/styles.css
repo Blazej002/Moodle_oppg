@@ -1,0 +1,19 @@
+.box{
+    height: auto;
+    width: 200px;
+    border: solid;
+
+}
+.boxes {
+    display: flex;
+    margin-top: -10px;
+}
+.margin {
+    margin-left: 10px;
+}
+
+
+.frist {
+    margin-top: 40px;
+    margin-left: 150px;
+}
