@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafikk lys</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="light_cont border">
+        <div class="red circle border not_selected" id="red_1"></div>
+        <div class="yellow circle border not_selected" id="yellow_1"></div>
+        <div class="green circle border" id="green_1"></div>
+    </div>
+
+    <div class="buttons_cont">
+        <!-- <button class="buttons red" onclick="turn_red('red_1', 'green_1', 'yellow_1')"></button> -->
+        <button class="buttons red" onclick="ave()"></button>
+        <button class="buttons yellow" onclick="turn_red('yellow_1', 'green_1', 'red_1')"></button>
+        <button class="buttons green" onclick="turn_red('green_1', 'red_1', 'yellow_1')"></button>
+    </div>
+</body>
+
+</html>

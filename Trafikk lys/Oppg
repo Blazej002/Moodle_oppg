@@ -1,0 +1,14 @@
+Denne oppgaven løser du med: Funksjoner, Parameter, Onclick og evt setTimeout().
+
+I denne oppgaven skal du lage et trafikklys som bytter fra rødt -
+til rødt og gult og så til grønt ved hjelp av knapper som bytter hvilke sirkler som har farge
+ - og hvilke farge den har.
+
+1. Lag tre sirkler under hverandre, som skal kunne ha en bakgrunnsfarge.
+ Det øverste kan bli rødt, det i midten kan bli gult/oransje og det nederste grønt.
+
+2. Lag 3 knapper - en før rødt lys, en for rødt og gult og en for grønt lys.
+
+3. Bruk funksjon med parameter, CSS klasser og onclick for å få knappene til å endre lysene.
+
+4. Når du har fått til dette kan du utfordre deg selv og forsøke å finne ut hvordan man kan automatisere trafikklyset ved hjelp av setTimeout()
