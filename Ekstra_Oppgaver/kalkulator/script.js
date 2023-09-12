@@ -5,6 +5,29 @@ const app = document.getElementById('app');
 
 
 // Controller
+
+// Ekstra oppg
+
+//Usiker hvordan den funker, Fant den på nette + liker den ikke
+
+// function addComa(number) {
+//     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+// };
+
+function takeFromMem(x) {
+    document.getElementById('displayId').value = x;
+};
+function saveToMem(x, sumn) {
+    if (sumn === 'skip') return;
+    if (sumn === 'sqrt') return document.getElementById('logId').value = '√' + x;
+    if (sumn === 'xxx') return document.getElementById('logId').value = x + '²';
+    document.getElementById('logId').value = x;
+};
+
+
+
+
+//
 function addSumn(value) {
     let thing = value;
 
@@ -14,22 +37,26 @@ function addSumn(value) {
 
 function clr() {
     document.getElementById('displayId').value = '';
+    document.getElementById('logId').value = '';
 };
 
-function sum() {
+function sum(type) {
     let x = document.getElementById('displayId').value;
+    saveToMem(x, type)
     let y = eval(x)
+    //Ekstra
+    // y = addComa(y);
     document.getElementById('displayId').value = y;
 };
 function plusMinus() {
-    sum()
+    sum('skip')
     let x = document.getElementById('displayId').value;
     let y = 0 - x
     document.getElementById('displayId').value = y
 };
 //x²
 function yxy() {
-    sum()
+    sum('xxx')
     let x = document.getElementById('displayId').value;
     let y = x * x
     document.getElementById('displayId').value = y
@@ -37,7 +64,7 @@ function yxy() {
 
 //√
 function xyx() {
-    sum()
+    sum('sqrt')
     let x = document.getElementById('displayId').value;
     let y = Math.sqrt(x)
     document.getElementById('displayId').value = y
@@ -46,16 +73,16 @@ function xyx() {
 function backspace() {
     let x = document.getElementById('displayId').value;
     const newNum = x.slice(0, -1);
-    // let trueNum = parseInt(newNum);
     document.getElementById('displayId').value = newNum;
 };
-
 
 // View
 updateView()
 function updateView() {
     let html = /*HTML*/ `
  <div>
+ <input id="logId" onclick="takeFromMem(this.value)" type="text" value="ave" class="log" readonly>
+ <br>
  <input type="text" id="displayId" class="display">
  <br><button onclick="backspace()" class="backspace">Backspace</button>
  <div class="container">
@@ -83,7 +110,7 @@ function updateView() {
  <button onclick="plusMinus()" class="button del">+/-</button>
  <button value="0" onclick="addSumn(this.value)" class="button">0</button>
  <button value="," onclick="addSumn(this.value)" class="button">,</button>
- <button onclick="sum()" class="button">=</button>
+ <button onclick="sum(null)" class="button">=</button>
 
  </div>
 `;

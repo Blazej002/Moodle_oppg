@@ -23,8 +23,16 @@ body{
 .del {
     padding: 1px;
 }
+.log{
+    margin-top: 20px;
+    height: 20px;
+    border: solid 1px black;
+    margin-left: 2px;
+    width: 190px;
+}
 
 .display {
+
     margin-left: 1px;
     width: 189px;
     height: auto;
