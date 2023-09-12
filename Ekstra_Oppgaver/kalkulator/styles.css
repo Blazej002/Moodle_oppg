@@ -1,0 +1,33 @@
+body{
+    font-size: xx-large;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+
+.button {
+    height: 30px;
+    border: solid;
+    margin: 1px;
+}
+
+.backspace {
+    padding-top: 5px;
+    width: 200px;
+    border: solid;
+    font-size: 20px;
+}
+.del {
+    padding: 1px;
+}
+
+.display {
+    margin-left: 1px;
+    width: 189px;
+    height: auto;
+    border: solid;
+    height: 50px;
+}
