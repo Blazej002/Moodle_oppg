@@ -13,13 +13,23 @@ body{
     border: solid;
     margin: 1px;
 }
-
-.backspace {
-    padding-top: 5px;
-    width: 200px;
-    border: solid;
-    font-size: 20px;
+.backspace{
+    margin-left: 1px;
 }
+
+.square {
+    padding-top: 12px;
+    width: 98px;
+    border: solid;
+    font-size: 15px;
+}
+
+.clear {
+    margin-left: -6px;
+}
+
+
+
 .del {
     padding: 1px;
 }
