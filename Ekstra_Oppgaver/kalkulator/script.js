@@ -7,7 +7,6 @@ const app = document.getElementById('app');
 // Controller
 
 // Ekstra oppg
-
 //Usiker hvordan den funker, Fant den på nette + liker den ikke
 
 // function addComa(number) {
@@ -81,7 +80,7 @@ updateView()
 function updateView() {
     let html = /*HTML*/ `
  <div>
- <input id="logId" onclick="takeFromMem(this.value)" type="text" value="ave" class="log" readonly>
+ <input id="logId" onclick="takeFromMem(this.value)" type="text" value="" class="log" readonly>
  <br>
  <input type="text" id="displayId" class="display">
  <br><button onclick="backspace()" class="backspace">Backspace</button>
