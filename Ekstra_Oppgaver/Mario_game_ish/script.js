@@ -13,12 +13,12 @@ const charaCopy = [200, 140, 100, 80, 300];
 
 let items = [
    { name: '', img: './img/hp/empty.png', hover: 'Empty', effect: null, type: null },
-   { name: 'Heart', img: './img/hp/heartFull.png', hover: 'Heals 100 hp', effect: 50, type: 'heal' },
+   { name: 'Heart', img: './img/hp/heartFull.png', hover: 'Heals 50 hp', effect: 50, type: 'heal' },
    { name: 'Nuke', img: './img/hp/BigBomb.png', hover: 'Does 50 DMG', effect: -50, type: 'dmgEnemy' },
    { name: 'Shrom', img: './img/hp/shrom.png', hover: 'heals 15 hp', effect: 15, type: 'heal' },
    { name: 'Shrom', img: './img/hp/shrom.png', hover: 'heals 15 hp', effect: 25, type: 'poisonSelf' },
    { name: 'Bomb', img: './img/hp/bomb.png', hover: 'Does 25 dmg', effect: -25, type: 'dmgEnemy' },
-   { name: 'Bomb', img: './img/hp/bomb.png', hover: 'Does 25 dmg', effect: -25, type: 'dmgSelf' },
+   { name: 'Bomb', img: './img/hp/bomb.png', hover: 'Does 25 dmg', effect: -28, type: 'dmgSelf' },
    { name: 'Lucky bomb', img: './img/hp/bwshrom.png', hover: 'Heals bowser, or has a chance to deal dmg', effect: 150, type: 'ran' },
 ];
 
@@ -261,7 +261,7 @@ function updateFight(i) {
    <div class="topbar">
       <div class="hp">HP = ${health}</div>
       <div class="hp">Bowser HP = ${Bhealth} 
-         <br>Holding <tt>${items[cur_item].name}</tt> ${cooldownTimer}
+         <br><tt>${items[cur_item].name}</tt> ${cooldownTimer}
       </div>
 
       <div class="item" title="${items[cur_item].hover}"><img src="${items[cur_item].img}" style="width:50px;"></div>
