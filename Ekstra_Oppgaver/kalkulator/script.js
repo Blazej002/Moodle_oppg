@@ -40,6 +40,7 @@ function clr() {
 };
 
 function sum(type) {
+    
     let x = document.getElementById('displayId').value;
     saveToMem(x, type)
     let y = eval(x)
@@ -83,13 +84,16 @@ function updateView() {
  <input id="logId" onclick="takeFromMem(this.value)" type="text" value="" class="log" readonly>
  <br>
  <input type="text" id="displayId" class="display">
- <br><button onclick="backspace()" class="backspace">Backspace</button>
+ <br>
+ <div><button onclick="backspace()" class="square backspace">Backspace</button>
+ <button onclick="clr()" class="square clear">C</button></div>
  <div class="container">
 
  <button onclick="xyx()" class="button">√</button>
  <button onclick="yxy()" class="button">x²</button>
  <button value="/100" onclick="addSumn(this.value)" class="button">%</button>
- <button onclick="clr()" class="button">C</button>
+ <button value="/" onclick="addSumn(this.value)" class="button">/</button>
+ 
 
 
  <button value="7" onclick="addSumn(this.value)" class="button">7</button>
