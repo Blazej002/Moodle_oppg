@@ -3,7 +3,6 @@
 const app = document.getElementById('app');
 
 
-
 // Controller
 
 // Ekstra oppg
