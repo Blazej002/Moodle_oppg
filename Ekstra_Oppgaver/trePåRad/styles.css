@@ -1,0 +1,11 @@
+.cont {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.square {
+    font-size: xx-large;
+    border: solid;
+    height: 100px;
+    text-align: center;
+}
