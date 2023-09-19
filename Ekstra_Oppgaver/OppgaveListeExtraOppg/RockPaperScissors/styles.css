@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+#opp {
+    height: 150px;
+    margin-left: -10px;
+    border: solid;
+}
+
+.score {
+    margin-top: 250px;
+    margin-right: 669px;
+    font-size: 50px;
+    border: solid 2px;
+    text-align: center;
+}
+.vs{
+    margin-bottom: 10px;
+}
+
+.reset {
+    margin-left: 54px;
+}
+.img {
+    height: 100px;
+    margin-left: 5px;
+    border: solid;
+
+}
+
+.border {
+    border: solid 5px;
+}
+
+.opp {
+    position: absolute;
+    left: 46%;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.inside_Box {
+    display: flex;
+    height: 300px;
+}
+
+.a {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.font {
+    margin-top: 100px;
+    font-size: 100px;
+}
+
+.space {
+    width: 200px;
+}
+
+.box {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 300px;
+}
+
+.hands {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* Center the .hands div horizontally */
+    transform: translateX(-50%);
+    /* Center the .hands div horizontally */
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items horizontally */
+    width: fit-content;
+    margin-bottom: 100px;
+}
