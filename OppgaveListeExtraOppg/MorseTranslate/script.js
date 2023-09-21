@@ -17,13 +17,13 @@ function translator(input) {
         for (letter in alphabetArray) {
             if (inp === alphabetArray[letter]) {
                 console.log(alphabetArray[letter])
-                morseTr += +morseCodeArray[letter] + ' / '
+                morseTr += morseCodeArray[letter] + ' * '
             };
         };
     };
     updateView()
 };
-function clear(){
+function clearMorse(){
     morseTr = '';
     updateView()
 }
@@ -36,7 +36,7 @@ function updateView() {
         <input type="text" onchange="translator(this.value)">
         <div>Translated to morse:</div><br>
         <div class="output">${morseTr}</div>
-        <button style ="margin-top:5px;"onclick="clear()">Clear</button>
+        <button style ="margin-top:5px;" onclick="clearMorse()">Clear</button>
  
      `;
     app.innerHTML = html;
