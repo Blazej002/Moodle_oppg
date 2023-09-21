@@ -1,0 +1,59 @@
+.dif {
+    width: 350px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.border {
+    border: solid 1px;
+
+}
+
+.buttons {
+    border: solid 2px;
+    margin: 3px;
+    height: 200px;
+    position: static;
+    opacity: 0.5;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.red {
+
+    border-radius: 70% 20% 100px 20%;
+    background-color: red;
+}
+
+.opp {
+    opacity: 50%;
+}
+
+.selected {
+    border: solid 5px;
+        
+}
+
+.yellow {
+    border-radius: 20% 70% 20% 100px;
+    background-color: yellow;
+}
+
+.a {
+    width: fit-content;
+    height: fit-content;
+}
+
+.green {
+    border-radius: 20% 100px 20% 70%;
+    background-color: green;
+}
+
+.blue {
+    border-radius: 100px 20% 70% 20%;
+
+    background-color: blue;
+}
