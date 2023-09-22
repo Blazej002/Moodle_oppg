@@ -1,0 +1,10 @@
+.encounterImg {
+    width: 200px;
+}
+.inventory {
+    display: flex;
+    flex-direction: row;
+}
+.hidden {
+    display: none;
+}
